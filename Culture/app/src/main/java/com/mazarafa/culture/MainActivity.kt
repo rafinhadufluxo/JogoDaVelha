@@ -127,13 +127,17 @@ class MainActivity : AppCompatActivity() {
         //winer doido
        if(winer != -1){
             if(winer == 1){
-                //Toast.makeText(context:this, text:"PLAYER 1 wint the game!", Toast.LENGTH_SHORT).show()
-                Toast.makeText(context: this, text:"PLAYER 1 wint the game! ",Toast.LENGTH__SHORT).show()
+               
+                Toast.makeText(context: this, text:"PARABENS! JOGADOR 1 venceu" ",Toast.LENGTH__SHORT).show()
             }else {
-                Toast.makeText(context: this, text:"PLAYER 2 wint the game! ",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context: this, text:"PARABENS! JOGADOR 2 venceu ",Toast.LENGTH_SHORT).show()
             }
+           
+        }else {
+          if (player1.size +  player2.size == 9) {
+              Toast.makeText(this, "Deu Velha!!", Toast.LENGTH_LONG).show()
 
-
+          }
         }
     }
 }
