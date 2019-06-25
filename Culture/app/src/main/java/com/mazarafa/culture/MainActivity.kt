@@ -51,9 +51,12 @@ class MainActivity : AppCompatActivity() {
             player2.add(cellID)
             activeplayer = 1
         }
+        
         btSelecionado.isEnabled = false
         checkWiner()
     }
+    
+    
     //Validando ganhador no Jogo da Velha com Android Kotlin
     fun checkWiner(){
         var winer = -1
@@ -121,9 +124,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
         //winer doido
        if(winer != -1){
             if(winer == 1){
@@ -141,3 +141,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+                               
+// fim de codigo :P
